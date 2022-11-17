@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-dark text-light">
     <div class="container">
         <header>
+            <div  class="junbotron text-center" style="padding: 20px; background-color: #4c4c4c; color: white; border-radius: 15px;">
             <h1>Aula de GIT</h1>
+        </div>
+        <br>
         </header>
         <nav>
             <ul>
-                <li><a href="">Home</a>
-                </li>
-                <li><a href="">Produtos</a></li>
+                <li><a class="btn btn-success" href="">Home</a>
+                </li><br>
+                <li><a class="btn btn-success" href="">Produtos</a></li>
 
             </ul>
         </nav>
-        <main></main>
+        <main>
+            <form>
+                <div class="mb-3">
+                  <label  " for="exampleInputEmail1" class="form-label">Email </label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"> email</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+        </main>
+        <br><br>
     <footer>
         <p>Desenvolvido por Daniel</p>
     </footer>
