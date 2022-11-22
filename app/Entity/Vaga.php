@@ -1,6 +1,8 @@
 <?php
 namespace App\Entity;
+
 use \App\Db\Database;
+use \PDO;
 class Vaga{
     public $id;
     public $titulo;
@@ -11,14 +13,19 @@ class Vaga{
         $this->data = date('y-m-d H:i:s');
 
          $obDatabase = new Database('vagas');
-         $obDatabase->insert([
+         $this->id=$obDatabase->insert([
             'titulo' => $this->titulo,
             'descricao' => $this->descricao,
             'ativo'=> $this->ativo,
             'data' => $this->data
          ]);
 
-
+         return true;
+         
+    }
+    public static function getVagas($where = null, $order = null, $limit = null){
+        return (new Database('vagas'))->select($where,$order,$limit)
+        ->fetchAll(PDO::FETCH_CLASS,self::class);
     }
     
 }
