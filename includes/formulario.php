@@ -23,13 +23,13 @@
             <div>
                 <div class="form-check form-check-inline">
                     <label class="form-control">
-                         <input type="radio" name="ativo" value="s" checked>Ativo
-                        </label>
+                        <input type="radio" name="ativo" value="s" checked>Ativo
+                    </label>
                 </div>
-            
+
                 <div class="form-check form-check-inline">
                     <label class="form-control">
-                         <input type="radio" name="ativo" value="n">Inativo</label>
+                        <input type="radio" name="ativo" value="n">Inativo</label>
                 </div>
             </div>
         </div>
